@@ -1,0 +1,50 @@
+.header {
+  background-color: $white-color;
+  border-bottom: 1px solid $additional-color;
+  position: fixed;
+  display: flex;
+  z-index: 10;
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+  &__menu--items {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    max-height: 88px;
+    padding: 24px 16px;
+    gap: 16px;
+    flex-shrink: 0;
+  }
+  &__menu-item {
+    flex-shrink: 0;
+    align-items: center;
+  }
+  & .header__action--button {
+    display: none;
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+  &__navigation--buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    gap: 16px;
+    & #callback__button {
+      display: none !important;
+    }
+  }
+  .separator {
+    width: 2px;
+    background-color: $gray-color;
+    height: 32px;
+  }
+  .separator--logo {
+    display: none;
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "style/_normalize";
+@import "style/_fonts";
+@import "style/_var";
+@import "style/_mixin";
+
+@import "style/header";
+@import "style/main";
+@import "style/footer";
+@import "style/swiper";
+@import "style/buttons";
+@import "style/modals";
+@import '../node_modules/swiper/swiper-bundle.css'

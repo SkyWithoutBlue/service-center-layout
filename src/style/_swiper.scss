@@ -1,0 +1,207 @@
+.swiper-slide {
+  &:hover {
+    & svg {
+      background-color: $hover-buttons-color;
+      border-radius: 50%;
+      transition: background-color 0.5s;
+    }
+  }
+}
+.brands__swiper {
+  position: relative;
+  margin-top: 16px !important;
+  width: 100%;
+  padding-bottom: 16px;
+  margin: 0 16px;
+  & .brands__swiper--wrapper {
+    & .brands__swiper--slide {
+      width: 240px !important;
+      height: 72px !important;
+      background-color: $white-color;
+      border: 1px solid $gray-color;
+      border-radius: 6px;
+      &:hover {
+        & svg {
+          background-color: $hover-buttons-color;
+          border-radius: 50%;
+          transition: background-color 0.5s;
+        }
+      }
+      &--inner {
+        display: flex;
+        justify-content: space-between;
+        margin: 16px;
+        align-items: center;
+      }
+    }
+  }
+  & .brands__swiper--pagination {
+    position: relative;
+  }
+}
+.swiper-pagination-bullet {
+  background-color: $swiper-theme-color;
+  width: 12px;
+  height: 12px;
+}
+
+.service__swiper {
+  padding-bottom: 48px !important;
+  .brands__swiper {
+    position: relative;
+    margin-top: 16px !important;
+    width: 100%;
+    padding-bottom: 16px;
+
+    margin: 0 16px;
+  }
+}
+.service__swiper {
+  position: relative;
+  margin-top: 16px !important;
+  width: 100%;
+  padding-bottom: 16px;
+  & .service__swiper--wrapper {
+    display: flex;
+    justify-content: center;
+    & .service__swiper--slide {
+      width: 240px !important;
+      height: 160px !important;
+      background-color: $white-color;
+      border: 1px solid $gray-color;
+      border-radius: 6px;
+
+      &--inner {
+        & .service__swiper--label {
+          padding: 16px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+        }
+        & .service__swiper--link {
+          position: absolute;
+          bottom: 16px;
+          right: 16px;
+        }
+      }
+    }
+  }
+}
+
+.service-prices__swiper {
+  position: relative;
+  margin-top: 16px !important;
+  margin: 0 16px;
+  width: 100%;
+  padding-bottom: 16px;
+  position: relative;
+  padding-bottom: 40px;
+  &--wrapper {
+    position: relative;
+    margin-top: 16px !important;
+    margin: 0 16px;
+    width: 100%;
+    padding-bottom: 16px;
+  }
+  &--slide {
+    width: 260px;
+    height: 200px;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 16px;
+    &--inner {
+      width: 260px;
+      height: 200px;
+
+      & .service-prices__swiper--label {
+        font-size: 14px;
+        line-height: 16px;
+        color: #7e7e82;
+      }
+      & .service-prices__swiper--info {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+      }
+    }
+    & .service__button {
+      position: absolute !important;
+      right: 16px;
+      bottom: 16px;
+    }
+  }
+}
+
+.swiper--show-button {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-left: 24px;
+  }
+  &:hover {
+    & > .info__read-more {
+      color: $accent-color;
+      transition: $transition-font-color;
+    }
+  }
+}
+.service-prices__stacked--slider {
+  margin: 24px;
+  border-radius: 6px;
+  border-collapse: collapse;
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: table;
+  }
+}
+.service-prices__stacked--label {
+  text-align: left;
+  font-size: 14px;
+  padding: 24px;
+}
+.service-prices__item {
+  font-size: 16px;
+  padding: 24px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+.service-prices__row {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+    left: 16px;
+    background: #eaeaea;
+    &:last-child::after {
+      display: none;
+    }
+  }
+}
+.last {
+  &::after {
+    display: none;
+  }
+}
+.fix {
+  text-align: center;
+  &:last-child::after {
+    background-color: red;
+  }
+}
+
+.service-prices__body {
+  position: relative;
+  box-shadow: 0 0 0 2px $white-color;
+  border-radius: 6px;
+  background-color: $white-color;
+  vertical-align: middle;
+}
