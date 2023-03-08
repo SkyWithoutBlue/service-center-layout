@@ -1,7 +1,6 @@
 {
   "name": "service-wp",
   "version": "1.2.1",
-  "description": "ссылка на youtube https://youtu.be/o8KMucDpSno",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve",

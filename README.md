@@ -1,4 +1,4 @@
-# WEBPACK
+# Webpack
 
 Для установки пакетов используйте команду npm install
 
