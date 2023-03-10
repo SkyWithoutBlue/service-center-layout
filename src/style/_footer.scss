@@ -1,7 +1,8 @@
 .footer {
   border-top: 1px solid $additional-color;
+
   &__info {
-    font-family: "TT Lakes";
+    font-family: 'TT Lakes';
     font-style: normal;
     font-weight: 500;
     font-size: 0.7rem;
@@ -15,6 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
     @media (min-width: $tablet-width) {
       display: grid;
       flex-direction: row;
@@ -26,14 +28,17 @@
       grid-template-rows: 1fr;
     }
   }
+
   &__made-by {
     @media (min-width: $tablet-width) {
       text-align: left;
     }
   }
+
   &__privacy-policy {
     padding: 16px;
   }
+
   &__offer {
     @media (min-width: $tablet-width) {
       text-align: right;

@@ -1,11 +1,11 @@
-/* general style */
 html {
-  font-family: "TT Lakes Medium", sans-serif;
+  font-family: 'TT Lakes Medium', sans-serif;
   background-color: $background-color;
   font-size: 20px;
   overflow-x: hidden;
   color: $font-color-black;
   box-sizing: border-box;
+
   a {
     color: $font-color-black;
   }
@@ -20,22 +20,21 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
+
 .link {
   color: $accent-color;
 }
-.invisible {
-  visibility: hidden;
-}
-/* general style */
 
 .main {
   display: flex;
   flex-direction: row;
+
   &__section {
     display: flex;
     flex-direction: column;
     position: relative;
     min-width: 320px;
+
     &--title {
       color: $font-color-black;
       padding: 0px 16px 0px 16px;
@@ -48,14 +47,17 @@ body {
       line-height: 40px;
       letter-spacing: -0.6px;
       cursor: default;
+
       @media (min-width: $tablet-width) {
         padding-left: 20px;
       }
+
       @media (min-width: $desktop-width) {
         margin-top: 0;
       }
+
       &::before {
-        content: "";
+        content: '';
         width: 4px;
         height: 40px;
         background-color: $indicator-color;
@@ -65,34 +67,43 @@ body {
         border-radius: 0px 5px 5px 0px;
       }
     }
+
     &--top {
       display: flex;
       align-items: center;
       justify-content: space-between;
       align-items: center;
       margin-top: 24px;
+
       &--buttons {
         display: none;
         margin-right: 30px;
+
         & .top__buttons--label {
           font-size: 16px;
           letter-spacing: -0.2px;
         }
+
         @media (min-width: $desktop-width) {
           display: flex;
           gap: 32px;
+
           & .repair__button {
             display: flex;
             align-items: center;
+            white-space: nowrap;
             gap: 8px;
             cursor: pointer;
+
             &:hover {
               & > .repair__button--label {
                 color: $accent-color;
                 transition: $transition-font-color;
               }
+
               & > button {
                 background-color: $hover-buttons-color;
+
                 & path {
                   fill: $accent-color;
                   transition: $transition-fill;
@@ -100,18 +111,23 @@ body {
               }
             }
           }
+
           & .check-status__button {
             position: relative;
             display: flex;
             align-items: center;
+            white-space: nowrap;
             gap: 8px;
             cursor: pointer;
+
             &:hover {
               & > .check-status__button--label {
                 color: $accent-color;
               }
+
               & > button {
                 background-color: $hover-buttons-color;
+
                 & path {
                   fill: $accent-color;
                   transition: $transition-fill;
@@ -133,16 +149,20 @@ body {
     overflow-x: unset;
     font-size: 14px;
     position: relative;
+
     &::-webkit-scrollbar {
       width: 0;
     }
+
     @media (min-width: $tablet-width) {
       padding: 0 24px;
     }
+
     @media (min-width: $desktop-width) {
       justify-content: start;
       flex-wrap: wrap;
     }
+
     &--item {
       padding: 0px;
       display: flex;
@@ -151,10 +171,12 @@ body {
       align-items: center;
       color: $font-color-light-gray;
       transition: 2s;
+
       &-label {
         padding: 8px 16px;
         border: 3px solid transparent;
         font-size: 16px;
+
         &:hover {
           border: 3px solid $hover-buttons-color;
           border-radius: 6px;
@@ -163,9 +185,11 @@ body {
         }
       }
     }
+
     &-radio-button {
       appearance: none;
       display: none;
+
       &:checked {
         + {
           .main__menu--slider--item-label {
@@ -178,17 +202,20 @@ body {
       }
     }
   }
+
   &__info {
     display: flex;
     flex-direction: column;
+
     @media (min-width: $tablet-width) {
       display: flex;
       margin-left: 24px;
       flex-direction: row;
       margin-top: 16px;
     }
+
     &--slider-item {
-      font-family: "TT Lakes";
+      font-family: 'TT Lakes';
       font-style: normal;
       font-weight: 400;
       font-size: 0.7rem;
@@ -200,15 +227,18 @@ body {
       align-items: center;
       flex-direction: column;
     }
+
     &--main-text {
       text-overflow: clip;
       white-space: wrap;
       width: auto;
       overflow: hidden;
       height: auto;
+
       ::-webkit-scrollbar {
         width: 0;
       }
+
       @media (min-width: $tablet-width) {
         text-overflow: clip;
         white-space: wrap;
@@ -216,6 +246,7 @@ body {
         max-width: 490px;
       }
     }
+
     &--read-more {
       padding: 0px 16px 16px 0px;
       column-gap: 8px;
@@ -227,15 +258,18 @@ body {
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.2px;
+
       &:hover {
         & > .read-more--label {
           color: $accent-color;
           transition: $transition-font-color;
         }
+
         & svg {
           transform: skew(35deg);
         }
       }
+
       &:active {
         & > .read-more--label {
           color: $black-color;
@@ -244,6 +278,7 @@ body {
       }
     }
   }
+
   &__picture {
     display: flex;
     justify-content: center;
@@ -251,16 +286,20 @@ body {
     height: auto;
     width: auto;
     margin: 0 auto;
+
     @media (min-width: $tablet-width) {
       min-width: 360px;
       border-radius: 100px;
+
       &--png {
         border-radius: 10px;
+
         @media (min-width: $desktop-width) {
         }
       }
     }
   }
+
   & .content-title {
     font-weight: 400;
     font-size: 16px;
@@ -270,14 +309,11 @@ body {
     color: $font-color-light-gray;
     padding: 16px;
     border-top: 1px solid $additional-color;
-    background: linear-gradient(
-      90deg,
-      $background-color 1.39%,
-      $white-color 100%
-    );
+    background: linear-gradient(90deg, $background-color 1.39%, $white-color 100%);
   }
+
   & .commercial {
-    font-family: "TT Lakes";
+    font-family: 'TT Lakes';
     font-style: normal;
     font-weight: 400;
     font-size: 0.7rem;
@@ -285,38 +321,44 @@ body {
     letter-spacing: 0.2px;
     color: $font-color-black;
     padding: 0 16px;
+
     @media (min-width: $tablet-width) {
       margin-top: 24px;
       margin-right: 40%;
     }
+
     @media (min-width: $desktop-width) {
       margin-right: 59%;
     }
+
     &__info {
       margin-top: 24px;
       display: flex;
       align-items: center;
       margin-bottom: 40px;
+
       &--link {
         color: $font-color-black;
-        font-family: "TT Lakes";
+        font-family: 'TT Lakes';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
+
         &:hover {
           color: $accent-color;
           transition: $transition-font-color;
         }
       }
     }
+
     .info__link--arrow {
       margin-left: 8px;
     }
   }
 }
-/* sidebar navigation style */
+
 .sidebar {
   position: fixed;
   overflow: auto;
@@ -328,6 +370,7 @@ body {
   background-color: $white-color;
   left: -100%;
   visibility: hidden;
+
   @media (min-width: $desktop-width) {
     display: flex;
     left: 0;
@@ -342,14 +385,17 @@ body {
     position: fixed;
     display: flex;
     flex-direction: column;
+
     @media (min-width: $tablet-width) {
       width: 320px;
       background: #ffffff;
       box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
     }
+
     @media (min-width: $desktop-width) {
       box-shadow: unset;
     }
+
     &--top {
       display: flex;
       align-items: center;
@@ -358,12 +404,14 @@ body {
       max-height: 88px;
       gap: 16px;
       justify-content: space-between;
+
       @media (min-width: $desktop-width) {
         & > :first-child {
           display: none;
         }
       }
     }
+
     &--main {
       padding-left: 24px;
       font-size: 0.8rem;
@@ -378,6 +426,7 @@ body {
       flex-grow: 1;
       overflow: auto;
     }
+
     &--link {
       display: flex;
       flex-direction: column;
@@ -389,9 +438,10 @@ body {
       position: relative;
       color: $font-color-black;
       padding: 16px 0px;
+
       &::before {
         position: absolute;
-        content: "";
+        content: '';
         top: 10px;
         left: -22px;
         height: 30px;
@@ -400,20 +450,25 @@ body {
         opacity: 0;
         background-color: #41f6d7;
       }
+
       &:hover {
         &::before {
           opacity: 1;
           transition: 0.3s;
           background-color: $accent-color;
         }
+
         color: #7e7e82;
       }
     }
+
     &--contacts {
       display: flex;
       flex-direction: column;
+
       &--mail {
         margin-top: 16px;
+
         & .mailto {
           &:hover {
             color: $accent-color;
@@ -421,23 +476,27 @@ body {
           }
         }
       }
+
       &--phone {
         margin-top: 12px;
 
         & .tel {
           font-weight: 700;
           font-size: 24px;
+
           &:hover {
             color: $accent-color;
             transition: color 0.3s;
           }
         }
       }
+
       &--lang {
         display: flex;
         justify-content: flex-start;
         column-gap: 7px;
         margin-top: 40px;
+
         & .lang-item {
           &:hover {
             color: $font-color-light-gray;
@@ -454,6 +513,7 @@ body {
       }
     }
   }
+
   &--link {
     &:hover {
       color: #7e7e82;
@@ -461,10 +521,12 @@ body {
     }
   }
 }
+
 .active::before {
   opacity: 1;
   background-color: #41f6d7;
 }
+
 .active {
   color: #7e7e82;
 }
@@ -475,28 +537,33 @@ body {
   opacity: 1;
   visibility: visible;
   height: 100vh;
+
   @media (min-width: $desktop-width) {
     left: 0;
     width: unset;
   }
+
   @media (min-width: $desktop-width) {
   }
 }
-/* sidebar navigation style */
+
 .service-cost__stacked--slider {
   margin: 24px;
   border-radius: 6px;
   border-collapse: collapse;
   display: none;
+
   @media (min-width: $tablet-width) {
     display: table;
   }
 }
+
 .service-cost__stacked--label {
   text-align: left;
   font-size: 14px;
   padding: 24px;
 }
+
 .service-cost__item {
   font-size: 16px;
   padding: 24px;
@@ -507,10 +574,12 @@ body {
   line-height: 18px;
   letter-spacing: 0.2px;
 }
+
 .service-cost__row {
   position: relative;
+
   &::after {
-    content: "";
+    content: '';
     display: block;
     height: 2px;
     position: absolute;
@@ -518,20 +587,16 @@ body {
     right: 16px;
     left: 16px;
     background: #eaeaea;
+
     &:last-child::after {
       display: none;
     }
   }
 }
+
 .last {
   &::after {
     display: none;
-  }
-}
-.fix {
-  text-align: center;
-  &:last-child::after {
-    background-color: red;
   }
 }
 

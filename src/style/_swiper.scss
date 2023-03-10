@@ -1,6 +1,7 @@
-.swiper-wrapper{
+.swiper-wrapper {
   height: unset;
 }
+
 .swiper-slide {
   &:hover {
     & svg {
@@ -10,11 +11,14 @@
     }
   }
 }
+
 .brands__swiper {
   position: relative;
   margin: 16px;
+
   & .brands__swiper--wrapper {
     grid-template-columns: repeat(auto-fill, 240px);
+
     @media (min-width: $tablet-width) {
       display: grid;
       justify-content: center;
@@ -22,18 +26,22 @@
       row-gap: 16px;
       column-gap: 32px;
     }
+
     & .brands__swiper--slide {
       width: 240px;
       height: 72px;
       background-color: $white-color;
       border: 1px solid $gray-color;
       border-radius: 6px;
+
       @media (min-width: $tablet-width) {
         width: 224px;
       }
+
       @media (min-width: $desktop-width) {
         width: 240px;
       }
+
       &:hover {
         & svg {
           background-color: $hover-buttons-color;
@@ -41,6 +49,7 @@
           transition: background-color 0.5s;
         }
       }
+
       &--inner {
         display: flex;
         justify-content: space-between;
@@ -49,11 +58,13 @@
       }
     }
   }
+
   & .brands__swiper--pagination {
     position: relative;
     margin-top: 16px;
   }
 }
+
 .swiper-pagination-bullet {
   background-color: $swiper-theme-color;
   width: 12px;
@@ -65,10 +76,12 @@
   margin-top: 16px;
   width: 100%;
   cursor: pointer;
+
   & .service__swiper--wrapper {
     display: flex;
     justify-content: flex-start;
     margin: 0 16px;
+
     @media (min-width: $tablet-width) {
       display: grid;
       justify-content: center;
@@ -76,18 +89,22 @@
       column-gap: 16px;
       row-gap: 16px;
     }
+
     & .service__swiper--slide {
       width: 240px;
       height: 160px;
       background-color: $white-color;
       border: 1px solid $gray-color;
       border-radius: 6px;
+
       @media (min-width: $tablet-width) {
         width: 224px;
       }
+
       @media (min-width: $desktop-width) {
         width: 240px;
       }
+
       &--inner {
         & .service__swiper--label {
           padding: 16px;
@@ -95,6 +112,7 @@
           font-size: 16px;
           line-height: 24px;
         }
+
         & .service__swiper--link {
           position: absolute;
           bottom: 16px;
@@ -104,7 +122,8 @@
     }
   }
 }
-.service__swiper--pagination{
+
+.service__swiper--pagination {
   margin-top: 16px;
   position: relative;
 }
@@ -115,20 +134,24 @@
   margin: 0 16px;
   position: relative;
   padding-bottom: 40px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
+
   &--wrapper {
     position: relative;
     margin-top: 16px;
     margin: 0 16px;
   }
+
   &--slide {
     width: 260px;
     height: 200px;
     background: #ffffff;
     border-radius: 6px;
     padding: 16px;
+
     &--inner {
       width: 260px;
       height: 200px;
@@ -138,6 +161,7 @@
         line-height: 16px;
         color: #7e7e82;
       }
+
       & .service-prices__swiper--info {
         font-weight: 400;
         font-size: 14px;
@@ -145,13 +169,15 @@
         letter-spacing: 0.2px;
       }
     }
+
     & .service__button {
       position: absolute;
       right: 16px;
       bottom: 16px;
     }
   }
-  & .service-prices__swiper--pagination{
+
+  & .service-prices__swiper--pagination {
     position: relative;
     margin-top: 16px;
   }
@@ -159,12 +185,14 @@
 
 .swiper--show-button {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
     margin-left: 24px;
     margin-top: 24px;
-    padding-bottom: 32px;;
+    padding-bottom: 32px;
   }
+
   &:hover {
     & > .info__read-more {
       color: $accent-color;
@@ -172,8 +200,10 @@
     }
   }
 }
+
 .service-prices__stacked--slider {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: table;
     margin: 24px;
@@ -181,11 +211,13 @@
     border-collapse: collapse;
   }
 }
+
 .service-prices__stacked--label {
   text-align: left;
   font-size: 14px;
   padding: 24px;
 }
+
 .service-prices__item {
   font-size: 16px;
   padding: 24px;
@@ -196,10 +228,12 @@
   line-height: 18px;
   letter-spacing: 0.2px;
 }
+
 .service-prices__row {
   position: relative;
+
   &::after {
-    content: "";
+    content: '';
     display: block;
     height: 2px;
     position: absolute;
@@ -207,21 +241,21 @@
     right: 16px;
     left: 16px;
     background: #eaeaea;
+
     &:last-child::after {
       display: none;
     }
   }
 }
+
 .last {
   &::after {
     display: none;
   }
 }
+
 .fix {
   text-align: center;
-  &:last-child::after {
-    background-color: red;
-  }
 }
 
 .service-prices__body {

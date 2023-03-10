@@ -10,8 +10,10 @@
   background-color: $accent-color;
   transition: background-color 0.3s, border 0.3s;
   cursor: pointer;
+
   &:hover {
     background-color: $hover-buttons-color;
+
     & svg {
       & path {
         fill: $accent-color;
@@ -19,9 +21,11 @@
       }
     }
   }
+
   &:active {
     background-color: $active--buttons-color;
   }
+
   & .icon {
     display: inline-flex;
     position: relative;
@@ -33,7 +37,7 @@
     transition: color 0.3s;
   }
 }
-/* service button */
+
 .service__button {
   display: inline-flex;
   justify-content: center;
@@ -52,6 +56,7 @@
   letter-spacing: -0.15px;
   text-transform: uppercase;
   color: #ffffff;
+
   &--label {
     margin-left: a;
     font-weight: 700;
@@ -59,29 +64,33 @@
     line-height: 24px;
     text-transform: uppercase;
   }
+
   &:hover {
     color: $accent-color;
     background-color: $hover-buttons-color;
     transition: 0.5s;
+
     & svg {
       & path {
         fill: $accent-color;
         transition: $transition-fill;
+
         & span {
           color: black;
         }
       }
     }
   }
+
   &:active {
     background-color: $active--buttons-color;
   }
 }
-/*              burger button              */
 
 .burger__lines {
   text-align: center;
   transition: all 0.25s ease-in-out;
+
   & > span {
     width: 20px;
     height: 2px;
@@ -91,15 +100,18 @@
     background-color: #fff;
   }
 }
+
 .burger__lines {
   & > span {
     transition: all 0.25s ease;
   }
+
   & > span:nth-child(3) {
     transform: scaleX(-1);
     margin-top: 0;
     float: right;
   }
+
   &:hover {
     & > span:nth-child(1),
     & > span:nth-child(3) {

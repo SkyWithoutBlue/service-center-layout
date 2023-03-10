@@ -5,9 +5,11 @@
   display: flex;
   width: 100%;
   z-index: 10;
+
   @media (min-width: $desktop-width) {
     display: none;
   }
+
   &__menu--items {
     display: flex;
     align-items: center;
@@ -16,35 +18,42 @@
     justify-content: space-between;
     padding: 24px 16px;
     gap: 16px;
-    
   }
+
   &__menu-item {
     align-items: center;
     flex-shrink: 0;
   }
+
   & .header__action--button {
     display: none;
+
     @media (min-width: $tablet-width) {
       display: flex;
     }
   }
+
   &__navigation--buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-left: auto;
     gap: 16px;
+
     & #callback__button {
       display: none !important;
     }
   }
+
   .separator {
     width: 2px;
     background-color: $gray-color;
     height: 32px;
   }
+
   .separator--logo {
     display: none;
+
     @media (min-width: $tablet-width) {
       display: block;
     }
