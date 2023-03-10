@@ -10,29 +10,156 @@
   <body>
     <div class="page">
       <!-- header start -->
+      <nav class="callback__sidebar">
+        <div class="modal__overlay"></div>
+        <div class="modal__sidebar--items">
+          <div class="callback__close button">
+            <div class="icon">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.79348 1.25712C2.40295 0.866593 1.76979 0.866592 1.37927 1.25712L1.25712 1.37927C0.866592 1.76979 0.866593 2.40296 1.25712 2.79348L7.46364 9L1.25712 15.2065C0.866593 15.597 0.866592 16.2302 1.25712 16.6207L1.37927 16.7429C1.76979 17.1334 2.40295 17.1334 2.79348 16.7429L9 10.5364L15.2065 16.7429C15.597 17.1334 16.2302 17.1334 16.6207 16.7429L16.7429 16.6207C17.1334 16.2302 17.1334 15.597 16.7429 15.2065L10.5364 9L16.7429 2.79348C17.1334 2.40296 17.1334 1.76979 16.7429 1.37927L16.6207 1.25712C16.2302 0.866592 15.597 0.866593 15.2065 1.25712L9 7.46364L2.79348 1.25712Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+          <h1 class="modal__sidebar--label">Заказать звонок</h1>
+          <input
+            type="phone"
+            placeholder="Телефон"
+            class="phone_number"
+            maxlength="12"
+          />
+          <p class="callback__info">
+            Нажимая “отправить”, вы даете согласие на
+            <a class="callback__info--link" href="#"
+              >обработку персональных данных
+            </a>
+            и соглашаетесь с нашей
+            <a class="callback__info--link" href="#"
+              >политикой конфиденциальности</a
+            >
+          </p>
+          <div class="service__button info--button">
+            <button>Отправить</button>
+            <svg
+              width="7"
+              height="10"
+              viewBox="0 0 7 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.8 4.99994L0.791554 2.229C0.3641 1.83529 0.361125 1.16138 0.785088 0.763917L0.920293 0.637162C1.30321 0.278177 1.89851 0.276333 2.28364 0.632939L6.93812 4.94264C6.9715 4.97355 6.9715 5.02633 6.93812 5.05723L2.34674 9.30851C1.92606 9.69803 1.27582 9.69601 0.857554 9.30389C0.394457 8.86974 0.397706 8.13363 0.864616 7.70358L3.8 4.99994Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+      <nav class="chat__sidebar">
+        <div class="modal__overlay"></div>
+        <div class="modal__sidebar--items">
+          <div class="chat__close button">
+            <div class="icon">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.79348 1.25712C2.40295 0.866593 1.76979 0.866592 1.37927 1.25712L1.25712 1.37927C0.866592 1.76979 0.866593 2.40296 1.25712 2.79348L7.46364 9L1.25712 15.2065C0.866593 15.597 0.866592 16.2302 1.25712 16.6207L1.37927 16.7429C1.76979 17.1334 2.40295 17.1334 2.79348 16.7429L9 10.5364L15.2065 16.7429C15.597 17.1334 16.2302 17.1334 16.6207 16.7429L16.7429 16.6207C17.1334 16.2302 17.1334 15.597 16.7429 15.2065L10.5364 9L16.7429 2.79348C17.1334 2.40296 17.1334 1.76979 16.7429 1.37927L16.6207 1.25712C16.2302 0.866592 15.597 0.866593 15.2065 1.25712L9 7.46364L2.79348 1.25712Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <h1 class="modal__sidebar--label">Обратная связь</h1>
+          <input
+            type="text"
+            placeholder="Имя"
+            class="phone_number"
+            maxlength="30"
+          />
+          <input
+            type="phone"
+            placeholder="Телефон"
+            class="phone_number"
+            maxlength="12"
+          />
+          <input
+            type="text"
+            placeholder="Электронная почта"
+            class="phone_number"
+            maxlength="50"
+          />
+          <input
+            type="text"
+            placeholder="Сообщение"
+            class="phone_number"
+            maxlength="250"
+          />
+          <p class="callback__info">
+            Нажимая “отправить”, вы даете согласие на
+            <a class="callback__info--link" href="#"
+              >обработку персональных данных
+            </a>
+            и соглашаетесь с нашей
+            <a class="callback__info--link" href="#"
+              >политикой конфиденциальности</a
+            >
+          </p>
+          <div class="service__button info--button">
+            <button>Отправить</button>
+            <svg
+              width="7"
+              height="10"
+              viewBox="0 0 7 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.8 4.99994L0.791554 2.229C0.3641 1.83529 0.361125 1.16138 0.785088 0.763917L0.920293 0.637162C1.30321 0.278177 1.89851 0.276333 2.28364 0.632939L6.93812 4.94264C6.9715 4.97355 6.9715 5.02633 6.93812 5.05723L2.34674 9.30851C1.92606 9.69803 1.27582 9.69601 0.857554 9.30389C0.394457 8.86974 0.397706 8.13363 0.864616 7.70358L3.8 4.99994Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
       <div class="app">
         <header class="header">
           <div class="header__menu--items">
-            <input
-              id="burger__button--toggle"
-              class=""
-              type="checkbox"
-              name="contacts__buttons"
-            />
-            <label class="burger__button button" for="burger__button--toggle">
+            <div class="burger__button button">
               <div class="burger__lines">
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
-            </label>
+            </div>
             <div class="header__menu-item separator separator--logo"></div>
             <a class="header__menu-item">
               <img class="logo" src="img/logo.svg" alt="" />
             </a>
             <ul class="header__navigation--buttons">
               <li class="button header__action--button button__callback">
-                <label class="callback__button button" for="callback__toggle">
+                <div class="callback__button button" for="callback__toggle">
                   <div class="icon">
                     <svg
                       class="svg"
@@ -51,10 +178,10 @@
                       />
                     </svg>
                   </div>
-                </label>
+                </div>
               </li>
               <li class="button header__action--button">
-                <label class="chat__button button" for="chat__toggle">
+                <div class="chat__button button">
                   <div class="icon">
                     <svg
                       class="svg"
@@ -72,7 +199,7 @@
                       />
                     </svg>
                   </div>
-                </label>
+                </div>
               </li>
               <li class="button header__action--button">
                 <button class="button profile__button">
@@ -150,7 +277,8 @@
 
         <!-- main start -->
         <main class="main">
-          <aside class="sidebar">
+          <aside class="sidebar" id="sidebar">
+            <div class="sidebar__overlay"></div>
             <nav class="sidebar__navigation">
               <div class="sidebar__navigation--top">
                 <button class="button burger__close">
@@ -238,16 +366,7 @@
                 </ul>
                 <div class="sidebar__navigation--contacts">
                   <div class="sidebar__navigation--contacts--buttons">
-                    <input
-                      id="callback__toggle"
-                      class="contact__button"
-                      type="checkbox"
-                      name="contacts__buttons"
-                    />
-                    <label
-                      class="callback__button button"
-                      for="callback__toggle"
-                    >
+                    <div class="callback__button button">
                       <div class="icon">
                         <svg
                           width="18"
@@ -264,82 +383,9 @@
                           />
                         </svg>
                       </div>
-                    </label>
-                    <nav class="callback__sidebar modal__sidebar--open">
-                      <div class="modal__sidebar--items">
-                        <input
-                          id="callback__toggle-close"
-                          class="button--close"
-                          type="checkbox"
-                          name="contacts__buttons"
-                        />
-                        <label
-                          class="button--close button"
-                          for="callback__toggle"
-                        >
-                          <div class="icon">
-                            <div class="icon">
-                              <svg
-                                width="18"
-                                height="18"
-                                viewBox="0 0 18 18"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  fill-rule="evenodd"
-                                  clip-rule="evenodd"
-                                  d="M2.79348 1.25712C2.40295 0.866593 1.76979 0.866592 1.37927 1.25712L1.25712 1.37927C0.866592 1.76979 0.866593 2.40296 1.25712 2.79348L7.46364 9L1.25712 15.2065C0.866593 15.597 0.866592 16.2302 1.25712 16.6207L1.37927 16.7429C1.76979 17.1334 2.40295 17.1334 2.79348 16.7429L9 10.5364L15.2065 16.7429C15.597 17.1334 16.2302 17.1334 16.6207 16.7429L16.7429 16.6207C17.1334 16.2302 17.1334 15.597 16.7429 15.2065L10.5364 9L16.7429 2.79348C17.1334 2.40296 17.1334 1.76979 16.7429 1.37927L16.6207 1.25712C16.2302 0.866592 15.597 0.866593 15.2065 1.25712L9 7.46364L2.79348 1.25712Z"
-                                  fill="white"
-                                />
-                              </svg>
-                            </div>
-                          </div>
-                        </label>
-                        <h1 class="modal__sidebar--label">Заказать звонок</h1>
-                        <input
-                          type="phone"
-                          placeholder="Телефон"
-                          class="phone_number"
-                          maxlength="12"
-                        />
-                        <p class="callback__info">
-                          Нажимая “отправить”, вы даете согласие на
-                          <a class="callback__info--link" href="#"
-                            >обработку персональных данных
-                          </a>
-                          и соглашаетесь с нашей
-                          <a class="callback__info--link" href="#"
-                            >политикой конфиденциальности</a
-                          >
-                        </p>
-                        <div class="service__button info--button">
-                          <button>Отправить</button>
-                          <svg
-                            width="7"
-                            height="10"
-                            viewBox="0 0 7 10"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M3.8 4.99994L0.791554 2.229C0.3641 1.83529 0.361125 1.16138 0.785088 0.763917L0.920293 0.637162C1.30321 0.278177 1.89851 0.276333 2.28364 0.632939L6.93812 4.94264C6.9715 4.97355 6.9715 5.02633 6.93812 5.05723L2.34674 9.30851C1.92606 9.69803 1.27582 9.69601 0.857554 9.30389C0.394457 8.86974 0.397706 8.13363 0.864616 7.70358L3.8 4.99994Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </nav>
+                    </div>
 
-                    <input
-                      id="chat__toggle"
-                      class="chat__button"
-                      type="checkbox"
-                      name="contacts__buttons"
-                    />
-                    <label class="chat__button button" for="chat__toggle">
+                    <button class="chat__button button">
                       <div class="icon">
                         <svg
                           width="20"
@@ -356,91 +402,7 @@
                           />
                         </svg>
                       </div>
-                    </label>
-
-                    <nav class="chat__sidebar modal__sidebar--open">
-                      <div class="modal__sidebar--items">
-                        <input
-                          id="chat__toggle-close"
-                          class="contact__button button--close"
-                          type="checkbox"
-                          name="contacts__buttons"
-                        />
-                        <label class="button--close button" for="chat__toggle">
-                          <div class="icon">
-                            <div class="icon">
-                              <svg
-                                width="18"
-                                height="18"
-                                viewBox="0 0 18 18"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  fill-rule="evenodd"
-                                  clip-rule="evenodd"
-                                  d="M2.79348 1.25712C2.40295 0.866593 1.76979 0.866592 1.37927 1.25712L1.25712 1.37927C0.866592 1.76979 0.866593 2.40296 1.25712 2.79348L7.46364 9L1.25712 15.2065C0.866593 15.597 0.866592 16.2302 1.25712 16.6207L1.37927 16.7429C1.76979 17.1334 2.40295 17.1334 2.79348 16.7429L9 10.5364L15.2065 16.7429C15.597 17.1334 16.2302 17.1334 16.6207 16.7429L16.7429 16.6207C17.1334 16.2302 17.1334 15.597 16.7429 15.2065L10.5364 9L16.7429 2.79348C17.1334 2.40296 17.1334 1.76979 16.7429 1.37927L16.6207 1.25712C16.2302 0.866592 15.597 0.866593 15.2065 1.25712L9 7.46364L2.79348 1.25712Z"
-                                  fill="white"
-                                />
-                              </svg>
-                            </div>
-                          </div>
-                        </label>
-
-                        <h1 class="modal__sidebar--label">Обратная связь</h1>
-                        <input
-                          type="text"
-                          placeholder="Имя"
-                          class="phone_number"
-                          maxlength="30"
-                        />
-                        <input
-                          type="phone"
-                          placeholder="Телефон"
-                          class="phone_number"
-                          maxlength="12"
-                        />
-                        <input
-                          type="text"
-                          placeholder="Электронная почта"
-                          class="phone_number"
-                          maxlength="50"
-                        />
-                        <input
-                          type="text"
-                          placeholder="Сообщение"
-                          class="phone_number"
-                          maxlength="250"
-                        />
-                        <p class="callback__info">
-                          Нажимая “отправить”, вы даете согласие на
-                          <a class="callback__info--link" href="#"
-                            >обработку персональных данных
-                          </a>
-                          и соглашаетесь с нашей
-                          <a class="callback__info--link" href="#"
-                            >политикой конфиденциальности</a
-                          >
-                        </p>
-                        <div class="service__button info--button">
-                          <button>Отправить</button>
-                          <svg
-                            width="7"
-                            height="10"
-                            viewBox="0 0 7 10"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M3.8 4.99994L0.791554 2.229C0.3641 1.83529 0.361125 1.16138 0.785088 0.763917L0.920293 0.637162C1.30321 0.278177 1.89851 0.276333 2.28364 0.632939L6.93812 4.94264C6.9715 4.97355 6.9715 5.02633 6.93812 5.05723L2.34674 9.30851C1.92606 9.69803 1.27582 9.69601 0.857554 9.30389C0.394457 8.86974 0.397706 8.13363 0.864616 7.70358L3.8 4.99994Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </nav>
+                    </button>
 
                     <button class="button">
                       <div class="icon">
@@ -666,9 +628,9 @@
               <h1>Ремонт техники различных брендов</h1>
             </div>
 
-            <div class="swiper brands__swiper">
-              <div class="swiper-wrapper brands__swiper--wrapper">
-                <div class="swiper-slide brands__swiper--slide">
+            <div class="brands__swiper swiper">
+              <div class="brands__swiper--wrapper swiper-wrapper">
+                <div class="brands__swiper--slide swiper-slide">
                   <a class="brands__swiper--slide--inner" href="">
                     <img src="img/brands/lenovo.svg" alt="" />
                     <svg
@@ -696,7 +658,7 @@
                     </svg>
                   </a>
                 </div>
-                <div class="swiper-slide brands__swiper--slide">
+                <div class="brands__swiper--slide swiper-slide">
                   <a class="brands__swiper--slide--inner" href="">
                     <img src="img/brands/samsung.png" alt="" />
                     <svg
@@ -724,7 +686,7 @@
                     </svg>
                   </a>
                 </div>
-                <div class="swiper-slide brands__swiper--slide">
+                <div class="brands__swiper--slide swiper-slide">
                   <a class="brands__swiper--slide--inner" href="">
                     <img src="img/brands/apple.svg" alt="" />
                     <svg
@@ -752,7 +714,7 @@
                     </svg>
                   </a>
                 </div>
-                <div class="swiper-slide brands__swiper--slide">
+                <div class="brands__swiper--slide swiper-slide">
                   <a class="brands__swiper--slide--inner" href="">
                     <img src="img/brands/viewsonic.svg" alt="" />
                     <svg
@@ -780,7 +742,7 @@
                     </svg>
                   </a>
                 </div>
-                <div class="swiper-slide brands__swiper--slide">
+                <div class="brands__swiper--slide swiper-slide">
                   <a class="brands__swiper--slide--inner" href="">
                     <img src="img/brands/bosch.svg" alt="" />
                     <svg
@@ -808,7 +770,7 @@
                     </svg>
                   </a>
                 </div>
-                <div class="swiper-slide brands__swiper--slide">
+                <div class="brands__swiper--slide swiper-slide">
                   <a class="brands__swiper--slide--inner" href="">
                     <img src="img/brands/hp.svg" alt="" />
                     <svg
@@ -836,7 +798,7 @@
                     </svg>
                   </a>
                 </div>
-                <div class="swiper-slide brands__swiper--slide">
+                <div class="brands__swiper--slide swiper-slide">
                   <a class="brands__swiper--slide--inner" href="">
                     <img src="img/brands/acer.svg" alt="" />
                     <svg
@@ -864,7 +826,7 @@
                     </svg>
                   </a>
                 </div>
-                <div class="swiper-slide brands__swiper--slide">
+                <div class="brands__swiper--slide swiper-slide">
                   <a class="brands__swiper--slide--inner" href="">
                     <img src="img/brands/sony.svg" alt="" />
                     <svg
@@ -893,15 +855,18 @@
                   </a>
                 </div>
               </div>
-              <div class="swiper-pagination brands__swiper--pagination"></div>
+              <div class="brands__swiper--pagination swiper-pagination"></div>
+              <div class="swiper--show-button">
+                <img src="img/expand.svg" alt="#" />
+                <a class="info__read-more" href="#">Показать все</a>
+              </div>
             </div>
-
             <div class="content-title">
               <h1>Ремонт различных видов техники</h1>
             </div>
-            <div class="swiper service__swiper">
-              <div class="swiper-wrapper service__swiper--wrapper">
-                <div class="swiper-slide service__swiper--slide">
+            <div class="service__swiper swiper">
+              <div class="service__swiper--wrapper swiper-wrapper">
+                <div class="service__swiper--slide swiper-slide">
                   <a class="service__swiper--slide--inner" href="">
                     <p class="service__swiper--label">Ремонт ноутбуков</p>
                     <svg
@@ -930,7 +895,7 @@
                     </svg>
                   </a>
                 </div>
-                <div class="swiper-slide service__swiper--slide">
+                <div class="service__swiper--slide swiper-slide">
                   <a class="service__swiper--slide--inner" href="">
                     <p class="service__swiper--label">Ремонт планшетов</p>
                     <svg
@@ -959,7 +924,7 @@
                     </svg>
                   </a>
                 </div>
-                <div class="swiper-slide service__swiper--slide">
+                <div class="service__swiper--slide swiper-slide">
                   <a class="service__swiper--slide--inner" href="">
                     <p class="service__swiper--label">Ремонт ПК</p>
                     <svg
@@ -988,7 +953,7 @@
                     </svg>
                   </a>
                 </div>
-                <div class="swiper-slide service__swiper--slide">
+                <div class="service__swiper--slide swiper-slide">
                   <a class="service__swiper--slide--inner" href="">
                     <p class="service__swiper--label">Ремонт мониторов</p>
                     <svg
@@ -1018,14 +983,18 @@
                   </a>
                 </div>
               </div>
-              <div class="swiper-pagination service__swiper--pagination"></div>
+              <div class="service__swiper--pagination swiper-pagination"></div>
+              <div class="swiper--show-button">
+                <img src="img/expand.svg" alt="#" />
+                <a class="info__read-more" href="#">Показать все</a>
+              </div>
             </div>
             <div class="content-title">
               <h1>Цены на услуги</h1>
             </div>
-            <div class="swiper service-prices__swiper">
-              <div class="swiper-wrapper service-prices__swiper--wrapper">
-                <div class="swiper-slide service-prices__swiper--slide">
+            <div class="service-prices__swiper swiper">
+              <div class="service-prices__swiper--wrapper swiper-wrapper">
+                <div class="service-prices__swiper--slide swiper-slide">
                   <div class="service-prices__swiper--slide--inner" href="">
                     <h1 class="service-prices__swiper--label">
                       Ремонтные услуги
@@ -1094,7 +1063,13 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination service__swiper--pagination"></div>
+              <div
+                class="service-prices__swiper--pagination swiper-pagination"
+              ></div>
+              <div class="swiper--show-button">
+                <img src="img/expand.svg" alt="#" />
+                <a class="info__read-more" href="#">Показать все</a>
+              </div>
             </div>
             <table class="service-prices__stacked--slider">
               <thead class="service-prices__stacked--label">

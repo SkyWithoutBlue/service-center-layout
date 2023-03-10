@@ -4,14 +4,13 @@ import "./index.scss";
 import Swiper, { Navigation, Pagination } from "swiper";
 Swiper.use([Pagination]);
 
-var swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
   spaceBetween: 16,
-  grabCursor: true,
+  observer: true,
   breakpoints: {
-    768: {
+    767: {
       enabled: false,
-      spaceBetween: 24,
     },
   },
   pagination: {
@@ -25,19 +24,23 @@ var swiper = new Swiper(".swiper", {
 const sidebar = document.querySelector(".sidebar");
 const burger = document.querySelector(".burger__button");
 const burger_close = document.querySelector(".burger__close");
-
-callback = document.querySelector(".callback__sidebar")
+const chat_sidebar = document.querySelector(".chat__sidebar");
+const chat_btn = document.querySelectorAll(".chat__button");
+const modal_overlay = document.querySelector(".modal__overlay");
+const chat_close = document.querySelector(".chat__close");
+const callback_btn = document.querySelectorAll(".callback__button");
+const callback_sidebar = document.querySelector(".callback__sidebar");
+const callback_close = document.querySelector(".callback__close");
+const sidebar_nav = document.querySelectorAll(
+  ".sidebar__navigation--main--items li a"
+);
 
 burger.addEventListener("click", () => {
-  sidebar.classList.toggle("sidebar__open");
+  sidebar.classList.add("sidebar__open");
   burger_close.addEventListener("click", () => {
     sidebar.classList.remove("sidebar__open");
   });
 });
-
-const sidebar_nav = document.querySelectorAll(
-  ".sidebar__navigation--main--items li a"
-);
 
 sidebar_nav.forEach((item) => {
   item.addEventListener("click", (e) => {
@@ -47,8 +50,28 @@ sidebar_nav.forEach((item) => {
     item.classList.add("active");
   });
 });
-/* sidebar */
+/* ------------------------chat--------------------------- */
+chat_btn.forEach((chat_btn_curr, index) => {
+  chat_btn_curr.addEventListener("click", () => {
+    chat_sidebar.classList.add("chat__sidebar--open");
 
-/* show all button */
-
-/* show all button */
+    modal_overlay.classList.add("modal__overlay--open");
+  });
+  chat_close.addEventListener("click", () => {
+    chat_sidebar.classList.remove("chat__sidebar--open");
+    modal_overlay.classList.remove("modal__overlay--open");
+  });
+});
+/* ------------------------chat--------------------------- */
+/* ------------------------callback--------------------------- */
+callback_btn.forEach((callback_btn_curr, index) => {
+  callback_btn_curr.addEventListener("click", () => {
+    callback_sidebar.classList.add("callback__sidebar--open");
+    modal_overlay.classList.add("modal__overlay--open");
+    callback_close.addEventListener("click", () => {
+      callback_sidebar.classList.remove("callback__sidebar--open");
+      modal_overlay.classList.remove("modal__overlay--open");
+    });
+  });
+});
+/* ------------------------callback--------------------------- */

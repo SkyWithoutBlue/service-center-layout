@@ -3,8 +3,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
   width: 40px;
+  flex-shrink: 0;
   height: 40px;
   border-radius: 50%;
   background-color: $accent-color;
@@ -78,10 +78,7 @@
   }
 }
 /*              burger button              */
-#burger__button--toggle {
-  appearance: none;
-  position: absolute;
-}
+
 .burger__lines {
   text-align: center;
   transition: all 0.25s ease-in-out;

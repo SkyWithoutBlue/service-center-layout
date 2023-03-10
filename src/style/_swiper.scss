@@ -1,3 +1,6 @@
+.swiper-wrapper{
+  height: unset;
+}
 .swiper-slide {
   &:hover {
     & svg {
@@ -9,17 +12,28 @@
 }
 .brands__swiper {
   position: relative;
-  margin-top: 16px !important;
-  width: 100%;
-  padding-bottom: 16px;
-  margin: 0 16px;
+  margin: 16px;
   & .brands__swiper--wrapper {
+    grid-template-columns: repeat(auto-fill, 240px);
+    @media (min-width: $tablet-width) {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fill, 224px);
+      row-gap: 16px;
+      column-gap: 32px;
+    }
     & .brands__swiper--slide {
-      width: 240px !important;
-      height: 72px !important;
+      width: 240px;
+      height: 72px;
       background-color: $white-color;
       border: 1px solid $gray-color;
       border-radius: 6px;
+      @media (min-width: $tablet-width) {
+        width: 224px;
+      }
+      @media (min-width: $desktop-width) {
+        width: 240px;
+      }
       &:hover {
         & svg {
           background-color: $hover-buttons-color;
@@ -37,6 +51,7 @@
   }
   & .brands__swiper--pagination {
     position: relative;
+    margin-top: 16px;
   }
 }
 .swiper-pagination-bullet {
@@ -46,31 +61,33 @@
 }
 
 .service__swiper {
-  padding-bottom: 48px !important;
-  .brands__swiper {
-    position: relative;
-    margin-top: 16px !important;
-    width: 100%;
-    padding-bottom: 16px;
-
-    margin: 0 16px;
-  }
-}
-.service__swiper {
   position: relative;
-  margin-top: 16px !important;
+  margin-top: 16px;
   width: 100%;
-  padding-bottom: 16px;
+  cursor: pointer;
   & .service__swiper--wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin: 0 16px;
+    @media (min-width: $tablet-width) {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fill, 240px);
+      column-gap: 16px;
+      row-gap: 16px;
+    }
     & .service__swiper--slide {
-      width: 240px !important;
-      height: 160px !important;
+      width: 240px;
+      height: 160px;
       background-color: $white-color;
       border: 1px solid $gray-color;
       border-radius: 6px;
-
+      @media (min-width: $tablet-width) {
+        width: 224px;
+      }
+      @media (min-width: $desktop-width) {
+        width: 240px;
+      }
       &--inner {
         & .service__swiper--label {
           padding: 16px;
@@ -87,21 +104,24 @@
     }
   }
 }
+.service__swiper--pagination{
+  margin-top: 16px;
+  position: relative;
+}
 
 .service-prices__swiper {
   position: relative;
-  margin-top: 16px !important;
+  margin-top: 16px;
   margin: 0 16px;
-  width: 100%;
-  padding-bottom: 16px;
   position: relative;
   padding-bottom: 40px;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
   &--wrapper {
     position: relative;
-    margin-top: 16px !important;
+    margin-top: 16px;
     margin: 0 16px;
-    width: 100%;
-    padding-bottom: 16px;
   }
   &--slide {
     width: 260px;
@@ -126,10 +146,14 @@
       }
     }
     & .service__button {
-      position: absolute !important;
+      position: absolute;
       right: 16px;
       bottom: 16px;
     }
+  }
+  & .service-prices__swiper--pagination{
+    position: relative;
+    margin-top: 16px;
   }
 }
 
@@ -138,6 +162,8 @@
   @media (min-width: $tablet-width) {
     display: block;
     margin-left: 24px;
+    margin-top: 24px;
+    padding-bottom: 32px;;
   }
   &:hover {
     & > .info__read-more {
@@ -147,12 +173,12 @@
   }
 }
 .service-prices__stacked--slider {
-  margin: 24px;
-  border-radius: 6px;
-  border-collapse: collapse;
   display: none;
   @media (min-width: $tablet-width) {
     display: table;
+    margin: 24px;
+    border-radius: 6px;
+    border-collapse: collapse;
   }
 }
 .service-prices__stacked--label {
