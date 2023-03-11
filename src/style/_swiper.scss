@@ -1,5 +1,8 @@
 .swiper-wrapper {
   height: unset;
+  @media (min-width: $tablet-width) {
+    margin: 24px 0px;
+  }
 }
 
 .swiper-slide {
@@ -142,7 +145,7 @@
   &--wrapper {
     position: relative;
     margin-top: 16px;
-    margin: 0 16px;
+    margin: 16px;
   }
 
   &--slide {
