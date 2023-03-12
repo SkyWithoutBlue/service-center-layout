@@ -81,14 +81,14 @@
   cursor: pointer;
 
   & .service__swiper--wrapper {
-    display: flex;
+    display: inline-flex;
     justify-content: flex-start;
     margin: 0 16px;
 
     @media (min-width: $tablet-width) {
       display: grid;
       justify-content: center;
-      grid-template-columns: repeat(auto-fill, 240px);
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       column-gap: 16px;
       row-gap: 16px;
     }
@@ -99,6 +99,7 @@
       background-color: $white-color;
       border: 1px solid $gray-color;
       border-radius: 6px;
+      margin: 0 auto;
 
       @media (min-width: $tablet-width) {
         width: 224px;

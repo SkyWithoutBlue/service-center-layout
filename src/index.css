@@ -332,7 +332,7 @@ body {
   display: none;
 }
 
-.main__menu--slider-radio-button:checked+.main__menu--slider--item-label {
+.main__menu--slider-radio-button:checked + .main__menu--slider--item-label {
   background: #ffffff;
   border-radius: 6px;
   box-sizing: border-box;

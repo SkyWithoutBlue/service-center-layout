@@ -48,16 +48,9 @@ module.exports = {
         use: [
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
-
           'group-css-media-queries-loader',
           {
             loader: 'resolve-url-loader',
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-            },
           },
           {
             loader: 'sass-loader',
