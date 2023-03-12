@@ -33,9 +33,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
     }),
-    // new CopyPlugin({
-    //   patterns: [{ from: 'static', to: './' }],
-    // }),
   ],
   module: {
     rules: [
@@ -51,6 +48,25 @@ module.exports = {
           'group-css-media-queries-loader',
           {
             loader: 'postcss-loader',
+            options: { sourceMap: true },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    'autoprefixer',
+                    {
+                      // Options
+                    },
+                    new MiniCssExtractPlugin({
+                      filename: mode ? '[name].[contenthash].css' : '[name].css',
+                    }),
+                  ],
+                ],
+              },
+            },
           },
           {
             loader: 'resolve-url-loader',
