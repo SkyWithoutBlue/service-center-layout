@@ -12,12 +12,12 @@
   "author": "Nikita Chebotov <nikitachebotov@gmail.com>",
   "license": "ISC",
   "browserslist": [
-    ">0.2%",
-    "not dead"
+    "last 2 versions"
   ],
   "devDependencies": {
     "@babel/core": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
@@ -28,6 +28,9 @@
     "image-webpack-loader": "^8.1.0",
     "mini-css-extract-plugin": "^2.7.3",
     "normalize.css": "^8.0.1",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-loader": "^7.0.2",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
@@ -47,7 +50,6 @@
   },
   "homepage": "https://github.com/SkyWithoutBlue/service-center-layout#readme",
   "dependencies": {
-    "autoprefixer": "^10.4.14",
     "node-sass": "^8.0.0"
   }
 }

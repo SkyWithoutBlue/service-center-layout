@@ -50,6 +50,9 @@ module.exports = {
           'css-loader',
           'group-css-media-queries-loader',
           {
+            loader: 'postcss-loader',
+          },
+          {
             loader: 'resolve-url-loader',
           },
           {
