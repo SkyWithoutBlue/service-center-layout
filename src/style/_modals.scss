@@ -28,7 +28,7 @@
 .modal__overlay {
 	position: fixed;
 	height: 100vh;
-	background: #fff;
+	background: $white-color;
 	opacity: 0.96;
 	visibility: visible;
 }
@@ -100,8 +100,6 @@
 }
 
 .modal__sidebar--header {
-	font-family: 'TT Lakes';
-	font-style: normal;
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 32px;
@@ -126,12 +124,10 @@
 }
 
 .callback__info {
-	font-family: 'TT Lakes';
-	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
-	color: #7e7e82;
+	color: $font-color-light-gray;
 	margin-top: 16px;
 
 	&--link {
