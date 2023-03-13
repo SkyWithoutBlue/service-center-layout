@@ -1,11 +1,11 @@
-@import '/src/style/_fonts';
-@import '/src/style/__var';
-@import '/src/style/__mixin';
+@import '../src/style/_fonts.scss';
+@import '../src/style/__var.scss';
+@import '../src/style/__mixin.scss';
 
-@import '/src/style/_header';
-@import '/src/style/_main';
-@import '/src/style/_footer';
-@import '/src/style/_swiper';
-@import '/src/style/_buttons';
-@import '/src/style/_modals';
+@import '../src/style/_header.scss';
+@import '../src/style/_main.scss';
+@import '../src/style/_footer.scss';
+@import '../src/style/_swiper.scss';
+@import '../src/style/_buttons.scss';
+@import '../src/style/_modals.scss';
 @import '../node_modules/swiper/swiper-bundle.css';

@@ -1,5 +1,5 @@
-import './index.scss';
 import './index.html';
+import './index.scss';
 
 import Swiper, { Navigation, Pagination } from 'swiper';
 

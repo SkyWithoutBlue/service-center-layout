@@ -8,22 +8,13 @@
     "build-prod": "webpack --node-env=production",
     "clear": "rd /s /q dist"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 version"
+  ],
   "keywords": [],
   "author": "Nikita Chebotov <nikitachebotov@gmail.com>",
   "license": "ISC",
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version",
-      "last 1 ie version"
-    ]
-  },
   "devDependencies": {
     "@babel/core": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
@@ -32,6 +23,7 @@
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
     "css-mqpacker": "^7.0.0",
+    "cssnano": "^5.1.15",
     "editorconfig": "^1.0.2",
     "group-css-media-queries-loader": "^4.3.0",
     "html-loader": "^4.2.0",
