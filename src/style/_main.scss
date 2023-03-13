@@ -280,6 +280,9 @@ body {
 			overflow: hidden;
 			height: auto;
 			max-width: 490px;
+			&::-webkit-scrollbar {
+				width: 0;
+			}
 
 			@media (min-width: $tablet-width) {
 				text-overflow: clip;
@@ -459,6 +462,9 @@ body {
 			width: 100%;
 			flex-grow: 1;
 			overflow: auto;
+			&::-webkit-scrollbar{
+				width: 0;
+			}
 		}
 
 		&--link {

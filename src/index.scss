@@ -1,11 +1,11 @@
-@import 'style/_fonts';
-@import 'style/_var';
-@import 'style/_mixin';
+@import '/src/style/_fonts';
+@import '/src/style/__var';
+@import '/src/style/__mixin';
 
-@import 'style/header';
-@import 'style/main';
-@import 'style/footer';
-@import 'style/swiper';
-@import 'style/buttons';
-@import 'style/modals';
+@import '/src/style/_header';
+@import '/src/style/_main';
+@import '/src/style/_footer';
+@import '/src/style/_swiper';
+@import '/src/style/_buttons';
+@import '/src/style/_modals';
 @import '../node_modules/swiper/swiper-bundle.css';
