@@ -1,7 +1,7 @@
 import './index.html';
 import './index.scss';
-
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper from 'swiper';
+import { Pagination } from 'swiper';
 
 /* ------------------------swiper--------------------------- */
 Swiper.use([Pagination]);
@@ -50,6 +50,7 @@ sidebar_nav.forEach(item => {
 	});
 });
 /* ------------------------sidebar--------------------------- */
+
 /* ------------------------chat--------------------------- */
 chat_btn.forEach((chat_btn_curr, index) => {
 	chat_btn_curr.addEventListener('click', () => {
