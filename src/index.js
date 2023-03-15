@@ -10,7 +10,7 @@ const swiper = new Swiper('.swiper', {
 	spaceBetween: 16,
 	observer: true,
 	breakpoints: {
-		767: {
+		1119: {
 			enabled: false,
 		},
 	},
