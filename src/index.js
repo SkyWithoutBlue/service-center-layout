@@ -77,6 +77,7 @@ callback_btn.forEach((callback_btn_curr, index) => {
 	});
 });
 /* ------------------------callback--------------------------- */
+
 /* ------------------------open brands--------------------------- */
 
 const openBrands = document.querySelectorAll('.brands__swiper--wrapper > .action__open-card');
