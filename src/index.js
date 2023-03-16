@@ -77,3 +77,45 @@ callback_btn.forEach((callback_btn_curr, index) => {
 	});
 });
 /* ------------------------callback--------------------------- */
+/* ------------------------open brands--------------------------- */
+
+const openBrands = document.querySelectorAll('.brands__swiper--wrapper > .action__open-card');
+const showButtonBrands = document.querySelectorAll('.swiper__show--brands > span');
+
+for (let i = 0; i < showButtonBrands.length; i++) {
+	showButtonBrands[i].addEventListener('click', function () {
+		if (this.innerText == 'Показать все') {
+			this.innerText = 'Скрыть все';
+			openBrands.forEach(elem => {
+				elem.classList.toggle('action__open-card');
+			});
+		} else {
+			this.innerText = 'Показать все';
+			openBrands.forEach(elem => {
+				elem.classList.add('action__open-card');
+			});
+		}
+	});
+}
+/* ------------------------open brands--------------------------- */
+
+/* ------------------------open service--------------------------- */
+const openService = document.querySelectorAll('.service__swiper--wrapper > .action__open-card');
+const showButtonService = document.querySelectorAll('.swiper__show--service > span');
+
+for (let i = 0; i < showButtonService.length; i++) {
+	showButtonService[i].addEventListener('click', function () {
+		if (this.innerText == 'Показать все') {
+			this.innerText = 'Скрыть все';
+			openService.forEach(elem => {
+				elem.classList.toggle('action__open-card');
+			});
+		} else {
+			this.innerText = 'Показать все';
+			openService.forEach(elem => {
+				elem.classList.add('action__open-card');
+			});
+		}
+	});
+}
+/* ------------------------open service--------------------------- */
